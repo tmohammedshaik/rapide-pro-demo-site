@@ -240,3 +240,17 @@ footer .legal{border-top-color:rgba(255,255,255,.15)}
 .sticky .btn.ghost{background:#fff!important}
 
 .svc img,.split img{height:auto}
+
+/* fond du site en blanc pur : les cartes passent en gris-bleu très clair pour rester visibles */
+:root{--canvas:#FFFFFF;--soft:#F3F6FB;--tint:#F3F6FB}
+body{background:#fff}
+.bar-top{background:var(--soft)}
+header.top{background:rgba(255,255,255,.96)}
+.pagehead,.hero{background:radial-gradient(900px 400px at 85% 0,rgba(30,79,163,.06),transparent 60%),#fff}
+.card,.svc a,.steps li,.formcard,.facts{background:var(--soft);border:1px solid rgba(11,27,46,.10);box-shadow:none}
+section.alt{background:var(--soft)}
+section.alt .card,section.alt .steps li{background:#fff}
+.formcard input[type=text],.formcard input[type=tel],.formcard input[type=email],.formcard input[type=number],.formcard input[type=date],.formcard select,.formcard textarea,.formcard .choice span,.formcard .items button{background:#fff}
+.btn.ghost,.burger,.sticky .btn.ghost{background:#fff!important}
+.intro .btn.ghost{background:rgba(6,17,31,.35)!important}
+.band-cta .btn.ghost{background:transparent!important}
