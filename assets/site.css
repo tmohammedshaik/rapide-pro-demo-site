@@ -254,3 +254,28 @@ section.alt .card,section.alt .steps li{background:#fff}
 .btn.ghost,.burger,.sticky .btn.ghost{background:#fff!important}
 .intro .btn.ghost{background:rgba(6,17,31,.35)!important}
 .band-cta .btn.ghost{background:transparent!important}
+
+/* look « service » plutôt que « boutique » : coins nets, pas d'ombres, cartes de services en grandes tuiles photo. Mise en page et textes inchangés. */
+:root{--r:5px}
+.btn,.burger,input[type=text],input[type=tel],input[type=email],input[type=number],input[type=date],select,textarea,.choice span,.items button{border-radius:5px}
+.btn{box-shadow:none;transition:background .15s}
+.btn:hover{transform:none}
+.card,.steps li,.formcard,.facts,.split img,.hero figure{border-radius:5px}
+.card{border-left:3px solid var(--accent)}
+.steps li{border-left:3px solid var(--accent)}
+.borne{letter-spacing:.1em}
+.borne::before{content:"";display:inline-block;width:1.6rem;height:2px;background:var(--accent);margin-right:.6rem;vertical-align:middle}
+.intro-copy .borne::before{display:none}
+.card .borne::before,.steps li::before{display:none}
+.svc a{position:relative;display:block;background:#0B1E36;border:0;border-radius:5px;color:#fff;transition:none}
+.svc a:hover{transform:none}
+.svc img{aspect-ratio:4/5;object-fit:cover;width:100%;height:auto;opacity:.92}
+.svc div{position:absolute;left:0;right:0;bottom:0;padding:3rem 1.2rem 1.2rem;background:linear-gradient(0deg,rgba(6,17,31,.94) 0%,rgba(6,17,31,.7) 55%,rgba(6,17,31,0) 100%)}
+.svc h3{color:#fff}
+.svc p{color:#D6DDE8}
+.svc span.more{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.split img{aspect-ratio:4/3}
+.sticky{left:0;right:0;bottom:0;padding:.6rem var(--gut) max(.6rem,env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);gap:.6rem}
+.sticky .btn{box-shadow:none}
+section{padding:clamp(2.6rem,7vw,4.6rem) 0}
+@media (max-width:860px){.svc img{aspect-ratio:4/3}}
